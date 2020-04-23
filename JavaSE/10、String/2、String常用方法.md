@@ -1,23 +1,23 @@
 [toc]
-# String的判断方法   
+# String的判断方法 
 equals(String anotherString)：判断两个字符串的内容是否一致 
 equalsIgnoreCase(String anotherString)：忽略大小写，判断两个字符串的内容是否一致
 
-isEmpty()：判断字符串是否为空         
+isEmpty()：判断字符串是否为空 
 
 endsWith(String suffix)：测试此字符串是否以指定的后缀结束 
 startsWith(String prefix)：测试此字符串是否以指定的前缀开始 
-startsWith(String prefix, int toffset)：测试此字符串从指定索引开始的子字符串是否以指定前缀开始         
+startsWith(String prefix, int toffset)：测试此字符串从指定索引开始的子字符串是否以指定前缀开始
 
 contains(CharSequence s)：当且仅当此字符串包含指定的 char 值序列时，返回 true
 
 matches(String regex)：判断字符串是否匹配给定的正则表达式
-# String 与 byte[]之间的转换   
-* 编码：String --> byte[]:调用String的getBytes()   
-    * getBytes()：以默认的编码方式，转换成字节数组    
+# String 与 byte[]之间的转换
+* 编码：String --> byte[]:调用String的getBytes()
+    * getBytes()：以默认的编码方式，转换成字节数组 
     * getBytes(String charsetName)：指定编码方式，转换为字节数组
-* 解码：byte[] --> String:调用String的构造器    
-    * String(byte bytes[])：以默认的编码方式解码    
+* 解码：byte[] --> String:调用String的构造器 
+    * String(byte bytes[])：以默认的编码方式解码 
     * String(byte bytes[], String charsetName)：以指定编码方式解码
 
 编码：字符串 -->字节  (看得懂 --->看不懂的二进制数据)
@@ -34,7 +34,8 @@ charAt(int index)：返回字符数组下角标为index的字符
 String转换为基本类型，调用包装类的静态方法：parseXx()
 # 英文大小写转换
 toLowerCase()：转换为小写
-totoUpperCase()：转换为大写                      
+totoUpperCase()：转换为大写
+
 # 截取字符串
 substring(int start)：从start到结尾截取字符串
 substring(int start, int end)：从start到end截取字符串，左闭右开，包头不包尾

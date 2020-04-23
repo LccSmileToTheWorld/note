@@ -18,8 +18,6 @@ StringBuffer sb2 = new StringBuffer("abc") --> char[] value = new char["abc".len
 指导意义：开发中建议大家初始化容量：StringBuffer(int capacity) 或 StringBuilder(int capacity) 
 # 常用方法
 
-
-
 * 增：
     * append(xx)：在尾部添加xxx
     * insert(int offset, xxx)：在角标offset处插入xxx
