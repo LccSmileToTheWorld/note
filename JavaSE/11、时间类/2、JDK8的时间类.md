@@ -57,3 +57,34 @@ JDK8新加的时间类
 格式都为：minusXxx()
 
 * LocalDateTime minusDays(long days)：减去几天
+
+# Instant
+
+```java
+//返回默认 UTC(格林威治) 时区的 Instant 类的对象
+Instant now = Instant.now();
+
+//返回在 1970 01 01 00 00 00 基础上加上指定毫秒数之后的 Instant 类的对象
+Instant instant = Instant.ofEpochMilli(123434L);
+
+//instant --> 时间戳
+long l = now.toEpochMilli();
+
+//时间戳 --> instant
+Instant instant1 = Instant.ofEpochMilli(1589249949518L);
+
+//结合即时的偏移来创建一个OffsetDateTime（带偏移量的时间类）
+OffsetDateTime offsetDateTime = now.atOffset(ZoneOffset.ofHours(8));
+```
+# DateTimeFormatter
+
+该类提供了三种格式化方法：
+
+* 预定义的标准格式。如：ISO_LOCAL_DATE_TIME；ISO_LOCAL_DATE；ISO_LOCAL_TIME
+* 本地化相关的格式。如： ofLocalizedDateTime(FormatStyle.LONG)
+* 自定义的格式。如： ofPattern(“yyyy MM dd hh:mm:ss”)
+
+格式化：String format(TemporalAccessor temporal)
+
+解析：TemporalAccessor parse(CharSequence text)
+
