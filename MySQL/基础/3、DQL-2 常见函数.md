@@ -83,7 +83,7 @@ mod(-10, -3)--> -1
 *  其他
     * **str_to_date(str, formate)**：将str转换成日期格式，并根据formate格式化  
     STR_TO_DATE('2019-08-22 00:01:02', '%Y-%m-%d') --> 2019-08-22
-    * **date_formate(date, formate)**：将date转换成字符串，并根据formate格式化
+    * **date_format(date, formate)**：将date转换成字符串，并根据formate格式化
      DATE_FORMAT('2019-08-22 00:01:02', '%Y年%c月%d日') --> 2019年8月22日
             
 | 格式符 | 功能               |
