@@ -82,7 +82,7 @@ OffsetDateTime offsetDateTime = now.atOffset(ZoneOffset.ofHours(8));
 
 * 预定义的标准格式。如：ISO_LOCAL_DATE_TIME；ISO_LOCAL_DATE；ISO_LOCAL_TIME
 * 本地化相关的格式。如： ofLocalizedDateTime(FormatStyle.LONG)
-* 自定义的格式。如： ofPattern(“yyyy MM dd hh:mm:ss”)
+* 自定义的格式。如： ofPattern(“yyyy MM dd HH:mm:ss”)
 
 格式化：String format(TemporalAccessor temporal)
 
