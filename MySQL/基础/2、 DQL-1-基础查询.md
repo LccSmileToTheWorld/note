@@ -65,9 +65,9 @@ WHERE   <条件1>   AND   <条件2>
     WHERE name LIKE '_张%'：查询name第二个字为张的数据
     当 % 和 _ 当作模糊查询条件时
     * 使用\进行转义
-       WHERE name LIKE '_\_%'：查询name第二个字为 _ 的数据
+       WHERE name LIKE '_ \ _%'：查询name第二个字为 _ 的数据
     * 使用**ESCAPE**关键字声明转义字符
-       WHERE name LIKE '_&_%' ESCAPE &：查询name第二个字为 _ 的数据
+       WHERE name LIKE '_&_%' ESCAPE &：查询name第1个字为& 的数据
   * BETWEEN <小临界值] AND [大临界值>
     * 结果包含临界值 
     * 俩个临界值不能颠倒顺序
