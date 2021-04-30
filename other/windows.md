@@ -8,6 +8,7 @@ host 文件路径：C:\Windows\System32\drivers\etc
 服务：services.msc
 网络连接：ncpa.cpl
 计算机详情：dxdiag
+计算机用户：netplwiz
 
 # cmd 命令行
 
@@ -25,4 +26,4 @@ host 文件路径：C:\Windows\System32\drivers\etc
 
 * 任务管理器——性能——CPU：内核为核数，逻辑处理器为线程数
 
-  
+查看环境变量：echo %[变量名]%

@@ -1,0 +1,14 @@
+| 注解           | 作用范围 | 解释                                                         |
+| -------------- | -------- | ------------------------------------------------------------ |
+| @Component     | 类       | 被标注的类会被Spring扫描到，注入Spring容器中，成为组件。     |
+| @Controller    | 类       | @Component衍生类                                             |
+| @Service       | 类       | @Component衍生类                                             |
+| @Repository    | 类       | @Component衍生类                                             |
+| @Configuration | 类       | 被标注的类，标记为配置类，替换xml配置。                      |
+| @Bean          | 类，注解 | 与@Configuration配合使用，方法返回值注入到Spring容器中，替换xml配置文件中的bean标签。 |
+| @Import        | 类       |                                                              |
+|                |          |                                                              |
+|                |          |                                                              |
+|                |          |                                                              |
+|                |          |                                                              |
+

@@ -1,0 +1,3 @@
+@Component解释：org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider#registerDefaultFilters
+
+org.springframework.context.annotation.ClassPathBeanDefinitionScanner#doScan
