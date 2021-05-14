@@ -57,3 +57,10 @@ split(String regex, int limit)：根据匹配给定的正则表达式来拆分�
 # 其他
 concat(String str)：拼接字符串，等同于+
 compareTo(String anotherString)：比较两个字符串大小，返回两者第一个不同字符（同下角标对比）的ASCII码值差，调用者-参数，可以为负数。如果两个字符串的长度不同，并且前面N（较短字符串的长度）个字符都相等，则返回两个字符串长度之差。
+
+format()：格式化字符串。
+eq：数字转 String 固定位数，不足补零。String.format("%04d", 22); //打印   0022
+0 代表前面要补的字符 
+4 代表字符串长度
+d 表示参数为整数类型
+
