@@ -1,13 +1,17 @@
-| 注解           | 作用范围 | 解释                                                         | 备注                                                         |
-| -------------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| @Component     | 类       | 被标注的类会被Spring扫描到，注入Spring容器中，成为组件。     |                                                              |
-| @Controller    | 类       | @Component衍生类                                             |                                                              |
-| @Service       | 类       | @Component衍生类                                             |                                                              |
-| @Repository    | 类       | @Component衍生类                                             |                                                              |
-| @Configuration | 类       | 被标注的类为配置类，替换以前的xml配置。                      |                                                              |
-| @Bean          | 类，注解 | 与@Configuration配合使用，方法返回值注入到Spring容器中，替换xml配置文件中的bean标签。 |                                                              |
-| @Import        | 类       |                                                              |                                                              |
-| @ComponentScan | 类       | 定义组件扫描策略                                             | 1、可重复注解。2、使用 includeFilters 属性时，要将 useDefaultFilters 设为false |
-| @Scope         |          |                                                              |                                                              |
-| @Lazy          |          |                                                              |                                                              |
+| 注解           | 作用范围                     | 解释                                                         | 备注                                                         |
+| -------------- | :--------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| @Component     | 类                           | 被标注的类会被Spring扫描到，注入Spring容器中，成为组件。     |                                                              |
+| @Controller    | 类                           | @Component衍生类                                             |                                                              |
+| @Service       | 类                           | @Component衍生类                                             |                                                              |
+| @Repository    | 类                           | @Component衍生类                                             |                                                              |
+| @Configuration | 类                           | 被标注的类为配置类，替换以前的xml配置。                      |                                                              |
+| @Bean          | 类，注解                     | 与@Configuration配合使用，方法返回值注入到Spring容器中，替换xml配置文件中的bean标签。 |                                                              |
+| @Import        | 类                           | 导入组件                                                     |                                                              |
+| @ComponentScan | 类                           | 定义组件扫描策略                                             | 1、可重复注解。2、使用 includeFilters 属性时，要将 useDefaultFilters 设为false |
+| @Scope         | 类，方法                     | 自定组件作用域                                               | 1、singleton（默认的）：单例，容器创建时，就会创建组件对象。2、prototype：多实例，懒加载，获取组件时才会去创建。3、request：同一次请求创建一个实例。4、session：同一session创建一个实例。 |
+| @Lazy          | 类，方法，构造器，参数，属性 | 懒加载                                                       |                                                              |
+| @Conditional   | 类，方法                     | 按照条件注册组件                                             |                                                              |
+|                |                              |                                                              |                                                              |
+|                |                              |                                                              |                                                              |
+|                |                              |                                                              |                                                              |
 
